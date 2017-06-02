@@ -1,10 +1,10 @@
 
 <% Attraction.all.each do |a| %>
-<%= link_to "Go on #{a.name}", a %>
+<%= link_to "Go on #{a.name}", a %><br/><br/>
   <% if current_user.admin %>
-    <%= link_to "Show #{a.name}", a %>
+    <%= link_to "Show #{a.name}", a %><br/><br/>
   <% else %>
-    <%= link_to "Go on #{a.name}", a %>
+    <%= link_to "Go on #{a.name}", a %><br/><br/>
   <% end %>
 <% end %>
 
